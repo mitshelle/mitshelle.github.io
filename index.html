@@ -1,191 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <title>Michelle McGowan!</title>
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/89411014?v=4" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Michelle McGowan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/89411014?v=4" type="image/png">
 </head>
 
-<body
-    style="background-color: #292727; display: flex; justify-content: space-evenly; align-items: flex-start; padding-top: 25px;">
-    <section>
-        <div class="bannerImg" alt="me holding umbrella!">
-            <div class="bannerTxt">
-                <div style="display: flex; padding-left: 25px; width: fit-content; height: fit-content;">
-                    <i class="fa-solid fa-check"
-                        style="font-size:15px;color:cornflowerblue;display: flex; align-items: flex-end;"></i>
-                    <p style="font-size:12px;display: flex; align-items: flex-end; padding-left: 10px;">Verified
-                        Software Engineer</p>
-                </div>
-                <h1 class="bannerHeader">Michelle McGowan</h1>
-                <p style="display: flex;padding-left: 25px; font-size: 12px;">42 monthly
-                    listeners</p>
-            </div>
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div id="profile">
+    <div id="profile_img" style="background: url(images/gradProfile.jpg) center center; padding-top: 13px;"></div>
+    <div id="username"><span style="display:block;">Michelle McGowan</span><a
+        href="https://github.com/mitshelle">@mitshelle</a></div>
+    <div id="userbio" style="display: block;">screams in error</div>
+    <div id="about">
+      <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+      <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+      <span><i class="fas fa-jedi"></i> &nbsp; <a href="images/mcgowan_michelle_resume.pdf" target="_blank">resume</a></span>
+      <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
+      <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; available for hire</span>
+      <div class="socials">
+        <span><a href="https://www.linkedin.com/in/mcgowanmichelle/" target="_blank" class="socials"><i
+              class="fab fa-linkedin-in"></i></a></span>        
+        <span><a href="https://open.spotify.com/playlist/6R4IhRy0fMPur3pp67JLYO?si=204b1742775c442a" target="_blank" class="socials"><i class="fas fa-headphones"></i></a></span>        
+      </div>
+    </div>
+  </div>
+  <div id="display">
+    <div id="about">
+      <h1>About</h1>
+      <div class="projects" id="about_section"></div>
+      <section>
+        <div class="about_section">
+          <span style="display:block; line-height: 23px; letter-spacing: 2px;">Howdy! I'm Michelle McGowan, a recent grad as of May 2024 with a B.S. in Computer Science and Minor in Mathematics from the University of Las Vegas, Nevada with a passion for
+            coding, mathematics, and exploring the world. When I'm not immersed in code, you'll find me rocking
+            out at concerts, sampling delicious cuisines, and embarking on adventures in new destinations. Let's connect
+            and share our love for tech, music, travel, and food! Looking for something exciting to work on in a new city and learning from others. 
+          </span>
         </div>
-        <div class="btns">
-            <a href="https://open.spotify.com/playlist/6R4IhRy0fMPur3pp67JLYO?si=b7e393c9b7844634" target="_blank">
-                <i class="fa-solid fa-circle-play" style="font-size:60px;color:#56ae57;"></i></a>
+      </section>
+      <section>
+    </div>
+    <div id="projects">
+      <h1>Work Experience</h1>
+      <div class="projects" id="workExp_section">
+        <a href="https://unlv-fia.github.io/UNLV-FIA-Group/" target="_blank">
+          <section>
+            <div class="section_title">UNLV FIA Full Stack Developer Intern</div>
+            <div class="about_section">
+              <span style="display:block; line-height: 25px;">
+                Service sites using Javascript, HTML, CSS, Angular, TypeScript, and C#</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://web.cs.unlv.edu/stefika/lab.html" target="_blank">
+          <section>
+            <div class="section_title">National Science Foundation Undergraduate Researcher</div>
+            <div class="about_section">
+              <span style="display:block; line-height: 23px;">Work with Quourum Programming Language to contribute to open source language 
+                to reduce anxiety about statistics</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://ires.engr.tamu.edu/2023-cohort/" target="_blank">
+          <section>
+            <div class="section_title">National Science Foundation Undergraduate Researcher</div>
+            <div class="about_section">
+              <span style="display:block; line-height: 23px;">Traveled to Malaysia for the IRES Program in Big Data and spent the summer at Universiti
+                Teknologi Petronas researching what qualities of a website make it successful</span>
+            </div>
+          </section>
+        </a>
+        <a target="_blank">
+          <section>
+            <div class="section_title">Mission Support and Test Services Full Stack Application Development Intern</div>
+            <div class="about_section">
+              <span style="display:block; line-height: 23px;">Created a .NET Blazor Application from scratch for the
+                enterprise to improve employee and management relations by 10%</span>
+            </div>
+          </section>
+        </a>
+      </div>
+      <h1>Projects</h1>
+      <div class="projects" id="projects_section">
+        <a href="https://github.com/mitshelle/spotify-app" target="_blank">
+          <section>
+            <div class="section_title">spotify-app</div>
+            <div class="about_section">
+              <span style="display:block;">simple recommendation app learned from a spotify workshop!</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/mitshelle/hex-color-guesser" target="_blank">
+          <section>
+            <div class="section_title">hex-color-guesser</div>
+            <div class="about_section">
+              <span style="display:block;">A game to guess the hex color in React and TypeScript!</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/mitshelle/data-structures-algos" target="_blank">
+          <section>
+            <div class="section_title">data-structures-algos</div>
+            <div class="about_section">
+              <span style="display:block;">Data Structures and Algorithms Class Projects</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/mitshelle/object-oriented" target="_blank">
+          <section>
+            <div class="section_title">object-oriented</div>
+            <div class="about_section">
+              <span style="display:block;">Object-Oriented Programming - CS202</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/mitshelle/machine-learning" target="_blank">
+          <section>
+            <div class="section_title">machine-learning</div>
+            <div class="about_section">
+              <span style="display:block;">Introduction to Machine Learning - CS422</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/mitshelle/mitshelle.github.io" target="_blank">
+          <section>
+            <div class="section_title">mitshelle.github.io</div>
+            <div class="about_section">
+              <span style="display:block;">website</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="https://github.com/imfunniee" target="_blank">creds to imfunniee for template <3 </a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementById("loading").classList.add("animated");
+      document.getElementById("loading").classList.add("fadeOut");
+      setTimeout(function () {
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+      }, 800);
+    }, 1500);
+    $.getJSON("blog.json", function (blog) {
+      blog = blog || [];
+      if (blog.length == 0) {
+        return (document.getElementById("blog_section").style.display =
+          "none");
+      }
+      for (var i = 0; i < blog.length; i++) {
+        $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+      }
+    }).fail(function () {
+      return (document.getElementById("blog_section").style.display = "none");
+    });
+  </script>
 
-            <!-- todo: add more pictures to banner for shuffle button  -->
-            <i class="fa-solid fa-shuffle"
-                style="font-size:40px;color:gray; padding-left: 30px; padding-top: 10px;"></i>
-            <div class="dropdown">
-                <button class="follow" style="padding-left: 30px; padding-top: 12px;"><a
-                        href="https://open.spotify.com/user/michellelmcgowan_02?si=b10eb79ce09c4b64" target="_blank"><i
-                            class="fa-solid fa-user-plus" style="font-size:30px;color:gray;"></i></a></button>
-                <div class="dropdown-content">
-                    <a href="https://www.linkedin.com/in/mcgowanmichelle/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/mitshelle" target="_blank">Github</a>
-                </div>
-            </div>
-        </div>
-        <div style="height: fit-content; width: fit-content;">
-            <h1 style="padding-left: 25px; padding-bottom: 10px; color: white;">Popular</h1>
-            <div class="popular">
-                <ol class="workList">
-                    <li class="work">
-                        <a href="unlvFulltime.html" target="_parent">1 UNLV Forestry Inventory and Analysis Full Stack
-                            Software
-                            Engineer</a>
-                        <span style="margin-left: 210px;">June 2024 - January 2025</span>
-                    </li>
-                    <li class="work"><a href="unlvIntern.html" target="_parent">2 UNLV Forestry Inventory and Analysis
-                            Full Stack Software
-                            Engineer Intern</a>
-                        <span style=" margin-left: 150px;">January 2023 - May 2024</span>
-                    </li>
-                    <li class="work"><a href="nnssIntern.html" target="_parent">3 Full Stack .NET Application
-                            Development Intern</a>
-                        <span style=" margin-left: 410px;">May 2022 - August 2022</span>
-                    </li>
-                </ol>
+  <script>
+    const magicProjectsGrid = new MagicGrid({
+      container: "#projects_section",
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true
+    });
 
-            </div>
-        </div>
-        <div id="discography">
-            <div class="carousel" style="padding-left: 10px;">
-                <a href="unlvFulltime.html" target="_parent">
-                    <div class="card">
-                        <img src="img/unlv-logo.png" alt="UNLV">
-                        <div class="card-content">
-                            <h4>Software Engineer</h4>
-                            <div style="display: flex; flex-direction: column;flex-wrap: wrap;">
-                                <p>Latest Job·</p>
-                                <p>Full Time</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="unlvIntern.html" target="_parent">
-                    <div class="card">
-                        <img src="img/unlv-logo.png" alt="UNLV">
-                        <div class="card-content">
-                            <h4>Software Engineer Intern</h4>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>2023·</p>
-                                <p>Internship</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://ires.engr.tamu.edu/2023-cohort/" target="_blank">
-                    <div class="card">
-                        <img src="img/unlv-logo.png" alt="UNLV">
-                        <div class="card-content">
-                            <h4>IRES Big Data Undergraduate Researcher</h4>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>2023·</p>
-                                <p>Research</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="quorumResearch.html" target="_parent">
-                    <div class="card">
-                        <img src="img/transparentQuorumlogo.png" alt="Quoroum" style="width: 67%; margin-left: 33px;">
-                        <div class="card-content">
-                            <h4>Quorum Undergraduate Researcher</h4>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>2023·</p>
-                                <p>Research</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="nnssIntern.html" target="_parent">
-                    <div class="card">
-                        <img src="img/nnss.png" alt="UNLV">
-                        <div class="card-content">
-                            <h4>Software Engineer Intern</h4>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>2022·</p>
-                                <p>Internship</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <h2 style="color: white; padding-left: 25px; ">Featuring</h2>
-        <div id="featuring">
-            <div class="carousel" style="padding-left: 10px;">
-                <a href="https://github.com/mitshelle" target="_blank">
-                    <div class="card">
-                        <img style="width: 75%; margin-left: 25px;" src="img/coding.png" alt="UNLV">
-                        <div class="card-content">
-                            <h4>Coder</h4>
-                            <p>explore my github!</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="card">
-                    <img src="img/books.png" alt="UNLV">
-                    <div class="card-content">
-                        <h4>Reader</h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/concert.png" alt="UNLV">
-                    <div class="card-content">
-                        <h4>Concert Comrade</h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/rock-climbing.png" alt="UNLV">
-                    <div class="card-content">
-                        <h4>Climber</h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/hellokitty.png" alt="UNLV">
-                    <div class="card-content">
-                        <h4>i love hello kitty</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h2 style="color: white; padding-bottom: 15px; padding-left: 25px; ">About</h2>
-        <div class="about">
-            <div class="one">
-                <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="text-on-top"><b>#1</b> in the world</div>
-                </div>
-            </div>
-            <div class="aboutMe">
-                <p style="line-height: 25px;">Howdy! I'm Michelle McGowan, a grad as of May 2024 with a B.S. in Computer
-                    Science and Minor in Mathematics from the University of Las Vegas, Nevada with a passion for coding,
-                    mathematics, and exploring the world. When I'm not immersed in code, you'll find me rocking out at
-                    concerts, sampling delicious cuisines, and embarking on adventures in new destinations. Let's
-                    connect and share our love for tech, music, travel, and food! Looking for something exciting to work
-                    on in a new city and learning from others.</p>
-            </div>
-        </div>
+    const magicWorksGrid = new MagicGrid({
+      container: "#workExp_section",
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true
+    });
 
-    </section>
+    $("document").ready(() => {
+      magicProjectsGrid.listen();
+      magicWorksGrid.listen();
+    });
+  </script>
+
+
 </body>
+
+</html>

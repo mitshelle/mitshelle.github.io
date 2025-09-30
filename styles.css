@@ -92,16 +92,6 @@ section {
     height: 100px;
 }
 
-
-#followButtonDropdown {
-    background: none;
-}
-
-.followBtn {
-    border: none;
-    height: 10%;
-}
-
 .follow {
     background: none;
     font-size: 16px;
@@ -142,10 +132,12 @@ section {
 
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 .fa-solid.fa-user-plus:hover {
+    color: white !important;
+}
+.fa-solid.fa-shuffle:hover{
     color: white !important;
 }
 

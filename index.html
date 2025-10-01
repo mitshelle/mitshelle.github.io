@@ -252,18 +252,30 @@
             Software Engineer</p>
         </div>
         <h1 class="bannerHeader">Michelle McGowan</h1>
-          <div style="display: flex; padding-left: 25px; font-size: 12px;" class="website-counter"></div>
+        <div style="display: flex; padding-left: 25px; font-size: 12px;" class="website-counter"></div>
       </div>
     </div>
     <div class="btns">
-      <a title="link to my resume! (will open in new tab)" href="img/mcgowan_michelle_resume.pdf" target="_blank">
-        <i class="fa-solid fa-circle-play" style="font-size:60px;color:#56ae57;"></i></a>
+      <div class="tooltip">
+        <a href="img/mcgowan_michelle_resume.pdf" target="_blank">
+          <i class="fa-solid fa-circle-play" style="font-size:60px;color:#56ae57;">
+            <div style=" padding-top: 5px; margin-left: -25px;">
+            <span class="tooltiptext">link to my resume! (will open in new tab)</span>
+            </div>
+          </i>
+        </a>
+      </div>
 
       <!-- todo: add more pictures to banner for shuffle button  -->
-      <a title="link to my coding playlist! (will open in new tab)"
-        href="https://open.spotify.com/playlist/6R4IhRy0fMPur3pp67JLYO?si=b7e393c9b7844634" target="_blank">
-        <i class="fa-solid fa-shuffle"
-          style="font-size:40px;color:gray; padding-left: 30px; padding-top: 10px;"></i></a>
+      <div class="tooltip">
+        <a href="https://open.spotify.com/playlist/6R4IhRy0fMPur3pp67JLYO?si=b7e393c9b7844634" target="_blank">
+          <i class="fa-solid fa-shuffle" style="font-size:40px;color:gray; padding-left: 30px; padding-top: 10px;">
+            <div style=" padding-top: 5px; margin-left: -25px;">
+            <span class="tooltiptext">link to my coding playlist! (will open in new tab)</span>
+            </div>
+          </i>
+        </a>
+      </div>
       <div class="dropdown">
         <button class="follow" style="padding-left: 30px; padding-top: 12px;"><a
             href="https://open.spotify.com/user/michellelmcgowan_02?si=b10eb79ce09c4b64" target="_blank"><i
@@ -413,25 +425,27 @@
           mathematics, and exploring the world. When I'm not immersed in code, you'll find me rocking out at
           concerts, sampling delicious cuisines, and embarking on adventures in new destinations. Let's
           connect and share our love for tech, music, travel, and food! Looking for something exciting to work
-          on in a new city and learning from others. Click the play button for my resume!</p>
+          on in a new city and learning from others. Click the play button for my <a>resume</a>!</p>
       </div>
     </div>
-    <div style=" padding-left: 370px;padding-top: 20px;"> <p style="color: white;">all code and photos belong to michelle mcgowan <3 </p></div>
+    <div style=" padding-left: 370px;padding-top: 20px;">
+      <p style="color: white;">all code and photos belong to michelle mcgowan <3 </p>
+    </div>
   </section>
 </body>
 <script>
-var counterContainer = document.querySelector(".website-counter");
-var visitCount = localStorage.getItem("page_view");
+  var counterContainer = document.querySelector(".website-counter");
+  var visitCount = localStorage.getItem("page_view");
 
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount + " monthly listeners";
+  // Check if page_view entry is present
+  if (visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+  } else {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+  }
+  counterContainer.innerHTML = visitCount + " monthly listeners";
 
 </script>
 

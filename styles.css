@@ -140,6 +140,41 @@ section {
 .fa-solid.fa-shuffle:hover{
     color: white !important;
 }
+.fa-solid.fa-circle-play:hover{
+    color: #7BC77C !important;
+}
+
+.tooltip {
+  position: relative;
+  cursor: default;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  padding: 0.25em 0.5em;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25em;
+  font-size: 15px;
+  white-space: nowrap;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  transition-property: visibility;
+  transition-delay: 0s;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  background: rgba(255, 255, 255, 0.59);
+  height: fit-content;
+  width: fit-content;
+}
+
 
 .workList {
     height: fit-content;

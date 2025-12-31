@@ -140,6 +140,12 @@ section {
 .fa-solid.fa-shuffle:hover{
     color: white !important;
 }
+.fa-brands.fa-github:hover{
+    color: white !important;
+}
+.fa-brands.fa-linkedin:hover{
+    color: white !important;
+}
 .fa-solid.fa-circle-play:hover{
     color: #7BC77C !important;
 }
